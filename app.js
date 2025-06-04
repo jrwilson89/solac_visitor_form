@@ -17,9 +17,9 @@ form.addEventListener("submit", async (event) => {
         }
     }
 
-    // const { error, data } = await supabase
-    //     .from("solac_visitor")
-    //     .insert(submission);
+    const { error, data } = await supabase
+        .from("solac_visitor")
+        .insert(submission);
     // if (error) {
     //     alert("Please fill out required fields.");
     // }
