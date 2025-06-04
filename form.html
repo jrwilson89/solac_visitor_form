@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLAC Vistor Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <form>
+            <h1>Visitor Form</h1>
+            <input name="firstname" type="text" class="field" required placeholder="First Name: "/>
+            <input name="lastname" type="text" class="field" required placeholder="Last Name: "/>
+            <input name="phone" type="tel" class="field" required placeholder="Phone: "/>
+            <input name="email" type="email" class="field" required placeholder="Email: "/>
+            <input name="address" type="address" class="field" placeholder="Mailing Address (optional): ">
+        </br>
+            <label for="howfind">How did you hear about us?</label>
+            <select name="howfind" id="howfind">
+                <option disabled selected value>select an option</option>
+                <option value="search">Online Search</option>
+                <option value="invite">Invited</option>
+                <option value="drive">Drive By</option>
+                <option value="other">Other</option>
+            </select>
+            </br>
+            <label for="interest">I'm interested in (Check all that apply): </label>
+            <div class="checkbox-container">
+                <input type="checkbox" id="learn" value="learn">
+                <label for="learn">Learning more about Jesus</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="member" value="member">
+                <label for="member">Becoming a member</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="baptize" value="baptize">
+                <label for="baptize">Being baptized</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="volunteer" value="volunteer">
+                <label for="volunteer">Volunteering</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="smallgroup" value="smallgroup">
+                <label for="smallgroup">Joining a small group</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="youth" value="youth">
+                <label for="youth">Youth/Kids Ministry</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="rec_pray" value="rec_pray">
+                <label for="rec_pray">Receiving prayer</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="pastormeet" value="pastormeet">
+                <label for="pastormeet">Meet with Pastor</label>
+            </div>
+            </br>
+            <label for="prayerreq">Do you have any prayer requests?</label>
+            <textarea class="field" id="textarea" name="textarea" rows="5" placeholder="Prayer Request: "></textarea>
+            </br>
+            <button class="button is-primary" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
