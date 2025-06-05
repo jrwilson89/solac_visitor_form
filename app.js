@@ -3,9 +3,9 @@ form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const storage = supabase.createClient(
-        "https://xfxmqrvghvdqjtzxyvqa.supabase.co",
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhmeG1xcnZnaHZkcWp0enh5dnFhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg0NTMzMDgsImV4cCI6MjA2NDAyOTMwOH0.cHZiSlljOSxf6DNTBQGs6cQd1UXROUTQLZvcn8kMdyg"
-    );
+        "https://imytquncrtggtmcezwrm.supabase.co",
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlteXRxdW5jcnRnZ3RtY2V6d3JtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkxNDg0MTIsImV4cCI6MjA2NDcyNDQxMn0.rBzBpU-_ad6LbKrddl9EuonDHk8lrS45eQhQzHfkFgg"
+        );
 
 
 
