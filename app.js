@@ -16,6 +16,7 @@ form.addEventListener("submit", async (event) => {
             if (element.type === "checkbox") {
                 if (element.checked) {
                     submission[element.name] = element.value;
+                    element.checked = false
                 }
             } else {
                 submission[element.name] = element.value;
