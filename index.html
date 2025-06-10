@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SOLAC Vistor Form</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-  <script src="app.js" defer></script>
 </head>
 
 <body>
     <div class="container" id="container">
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
             <h1>Visitor Form</h1>
+            <input type="hidden" name="access_key" value="29642603-3fb3-45ba-8a3b-36afe4a44cf0">
             <input name="firstname" type="text" class="field" required placeholder="First Name: "/>
             <input name="lastname" type="text" class="field" required placeholder="Last Name: "/>
             <input name="phone" type="tel" class="field" required placeholder="Phone: "/>
